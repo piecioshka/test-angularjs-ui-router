@@ -1,0 +1,37 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Testing Angular.js UI Router</title>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.9/angular.js"></script>
+    <script src="//unpkg.com/@uirouter/angularjs@1.0.7/release/angular-ui-router.js"></script>
+
+    <script src="main.js"></script>
+</head>
+<body ng-app="app">
+
+<div ng-controller="Application">
+    <h1 ng-cloak>
+        <a href="./">{{ title }}</a>
+    </h1>
+
+    <nav>
+        <ul>
+            <li><a href="#!/home">Home</a></li>
+            <li><button ng-click="navigate1()">Contact 1 [$state.go]</button></li>
+            <li><button ng-click="navigate2()">Contact 2 [$state.go, location=false]</button>(without hash change)</li>
+            <li><button ng-click="navigate3()">Contact 3 [$state.go, notify=false] </button></li>
+            <li><button ng-click="navigate4()">Contact 4 [$state.go, reload=false] </button></li>
+            <li><button ng-click="navigate5()">Contact 5 [location.hash]</button></li>
+            <li><button ng-click="navigate5a()">Contact 5a [location.hash + foo]</button>(without render)</li>
+            <li><button ng-click="navigate6()">Contact 6 [$location.path]</button></li>
+            <li><button ng-click="navigate6a()">Contact 6a [$location.path + bar]</button>(without render)</li>
+            <li><button ng-click="navigate7()">Contact 7 [$location.search]</button>(without render)</li>
+        </ul>
+    </nav>
+
+    <ui-view></ui-view>
+</div>
+
+</body>
+</html>
