@@ -71,4 +71,8 @@ angular.module('app', ['ui.router'])
             console.log('> navigate7');
             $location.search('key', 'value');
         };
+        $scope.navigate8 = () => {
+            console.log('> navigate8');
+            $location.hash('section-8');
+        };
     });
