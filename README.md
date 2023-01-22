@@ -2,7 +2,7 @@
 
 :ledger: Testing Angular.js UI Router
 
-## Demo 🎉
+## Preview 🎉
 
 <https://piecioshka.github.io/test-angularjs-ui-router/>
 
