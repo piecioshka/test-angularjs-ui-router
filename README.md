@@ -9,3 +9,7 @@
 ## Resources
 
 * <https://ui-router.github.io/ng1/docs/0.4.2/>
+
+## License
+
+[The MIT License](http://piecioshka.mit-license.org) @ 2026
